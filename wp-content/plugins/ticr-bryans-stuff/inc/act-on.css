@@ -1,0 +1,16 @@
+/* CSS Document */
+
+#ao_alignment_container table, #ao_alignment_container td { border:none; }
+#ao_alignment_container .formFieldText { height:auto; }
+#ao_alignment_container td, #ao_alignment_container th { padding:0; }
+
+#ao_alignment_container .formSectionDescription h3 { font-weight:300; padding:0; margin:0; font-style:italic; color:#00549E; font-size:1.7rem; }
+
+#ao_alignment_container input[type="text"], #ao_alignment_container input[type="tel"], #ao_alignment_container input[type="url"], #ao_alignment_container input[type="email"], #ao_alignment_container input[type="number"], #ao_alignment_container input[type="date"], #ao_alignment_container input[type="range"], #ao_alignment_container input[type="password"], #ao_alignment_container select, #ao_alignment_container textarea, #ao_alignment_container .customSelect { padding:.3em; border-radius:5px; line-height:1.2; }
+
+.aoFormContainer TABLE, .aoFormContainer TR, .aoFormContainer TD, .aoFormContainer DIV, .aoFormContainer TEXTAREA, .aoFormContainer INPUT, .aoFormContainer SELECT, .aoFormContainer UL, .aoFormContainer OL, .aoFormContainer P { font-size:inherit; }
+
+#ao_alignment_container .fine-print { font-size:.8em; }
+
+/* FOOTER STYLES */
+#footer #ao_alignment_container .formSectionDescription h3 { color:#FABB15; }

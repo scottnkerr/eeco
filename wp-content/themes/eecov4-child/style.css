@@ -1,0 +1,259 @@
+/*
+Theme Name: eecov4child
+Author: Tiecas, Inc.
+Author URI: http://www.tiecas.com/
+Description: This is a customized child theme for EECO's eecov4 theme.
+Version: 1.0.0
+License: This WordPress theme is comprised of two parts: (1) The PHP code and integrated HTML are licensed under the GPL license as is WordPress itself.  You will find a copy of the license text in the same directory as this text file. Or you can read it here: http://wordpress.org/about/gpl/ (2) All other parts of the theme including, but not limited to the CSS code, images, and design are licensed according to the license purchased. Read about licensing details here: http://themeforest.net/licenses/regular_extended
+Template: eecov4
+*/
+@import url("../eecov4/style.css");
+
+/* Top Bar */
+
+/* Added drop shadow */
+#top-bar {
+    -webkit-box-shadow: 0 5px 5px 3px #aeaeae;
+     box-shadow: 0 5px 5px 3px #aeaeae;
+}
+
+/* Added top border in gold */
+#header {
+    border-top: 5px solid #fdb813;
+}
+
+/* Removed white line appearing below the top bar */
+#top-bar:after {
+    background-color: #bfc4c8;
+}
+
+/* Added thin gold bar above navigation */
+.logo-classic nav, .logo-center nav, .logo-classic-centered nav {
+    border-top: 1px solid #FDB813;
+    padding-top: 10px;
+}
+
+/* Removed gray rule from top of menu by styling logo */
+.logo-classic-centered .navigation-holder, .logo-classic .navigation-holder {
+    border: none;
+}
+
+/* Hide location icon next to tag line */
+.mini-contacts li.address {
+    background-image: none;
+    padding-left: 0px;
+}
+
+/* Reduced right padding after moving logo to the left */
+.logo-left #branding, .logo-classic #branding, .logo-classic-centered #branding {
+    padding-right: 10px;
+}
+
+/* Reduced padding right for logo in floating menu */
+#phantom .ph-wrap.with-logo .ph-wrap-content .logo-box {
+    padding: 5px 0 5px 0;
+}
+
+
+/* Header Menu */
+
+/* Added blue shadow as outline for submenus */
+.sub-nav {
+    box-shadow: 0 0 4px rgba(0, 84, 158, 0.8);
+}
+
+/* Increased width of dropdown submenus and inside links */
+
+.sub-nav {
+    width: 270px;
+}
+
+.sub-nav > li > a {
+    width: 210px;
+}
+
+/* Changed current page color to gold - Old and deprecated
+#main-nav > li.act.menu-frame-on > a > span > span.menu-subtitle, #main-nav > li.act.menu-frame-on > a > span, #main-nav > li.act.menu-frame-on:hover > a > span, #main-nav > li.act.menu-frame-on:hover > a > span > span.menu-subtitle, #main-nav > li.act.menu-frame-on > a:hover span {
+    color: #FDB813;
+} */
+
+#main-nav.menu-frame-on > li.act > a > span > span.menu-subtitle, #main-nav.menu-frame-on > li.act > a > span, #main-nav.menu-frame-on > li.act:hover > a > span, #main-nav.menu-frame-on > li.act:hover > a > span > span.menu-subtitle, #main-nav.menu-frame-on > li.act > a:hover span {
+    color: #fdb813;
+}
+
+/* Changed down arrow color to match - Old and deprecated
+#main-nav > li.has-children.act.level-arrows-on > a:after, #main-nav > li.has-children.act.level-arrows-on:hover > a:after {
+    background-image: url("data:image/svg+xml,%3Csvg%20version=%221.1%22%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20x=%220px%22%20y=%220px%22%20width=%229px%22%20height=%226px%22%20viewBox=%220%200%209%206%22%20enable-background=%22new%200%200%209%206%22%20xml:space=%22preserve%22%3E%3Cpolygon%20fill=%22orange%22%20points=%228.205,1.669%204.515,5.516%200.824,1.703%201.846,0.669%204.515,3.344%207.189,0.669%20%22/%3E%3C/svg%3E");
+}  */
+
+#main-nav.menu-frame-on > li.has-children.act.level-arrows-on > a:after, #main-nav.menu-frame-on > li.has-children.act.level-arrows-on:hover > a:after {
+    background-image: url("data:image/svg+xml,%3Csvg%20version=%221.1%22%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20x=%220px%22%20y=%220px%22%20width=%229px%22%20height=%226px%22%20viewBox=%220%200%209%206%22%20enable-background=%22new%200%200%209%206%22%20xml:space=%22preserve%22%3E%3Cpolygon%20fill=%22orange%22%20points=%228.205,1.669%204.515,5.516%200.824,1.703%201.846,0.669%204.515,3.344%207.189,0.669%20%22/%3E%3C/svg%3E");
+}
+/* Page Title bar */
+
+/* Reduced padding top and bottom to reduce height */
+.page-title.title-right, .page-title.title-left {
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+/* Reduced padding in fancy title bar */
+.fancy-header .hgroup {
+    padding-top: 15px;
+    padding-bottom:5px;
+}
+
+/* Reduced font size of title bar */
+.page-title.title-left h1, .page-title.title-right h1 {
+    font-size: 26px;
+}
+
+
+/* Content customizations */
+
+/* Fancy Images - removed shadow to get rid of outside border & added rounded corners */
+
+.shortcode-single-image-wrap.br-standard.borderframe {
+    background-color: rgba(0, 84, 158, 0.04);
+    box-shadow: none;
+}
+
+.borderframe.br-standard .shortcode-single-image {
+    border: 1px solid rgba(191, 196, 200, 0.8);
+    border-radius: 6px;
+}
+
+/* Adjusted Fancy bullets style 1 with blue arrow */
+.standard-arrow li {
+    background-position: 0 10%;
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+}
+
+/* Removed clear both for h3-h6 */
+   h3, h4, h5, h6 {
+   clear: none;
+}
+
+/* Reduced right margin for images align left */
+   .alignleft {
+    margin: 5px 15px 10px 0;
+}
+
+
+/* Landing pages forms NOT USED ANYMORE
+.page-id-12947 form {
+    background-color: #F6F6F6;
+    border: 1px solid #6A737B;
+    border-radius: 8px;
+    margin: 0;
+    padding: 10px;
+    width: 60%;
+} */
+
+/* Added styles to accordions and toggles */
+.st-accordion li > a, .st-toggle > a {
+    background-position: left center;
+    border-bottom: 1px solid #FDB813;
+    padding-bottom: 5px;
+    padding-left: 25px;
+}
+
+/* Increased bottom margin between toggles */
+   #main .wpb_toggle, #main #content h4.wpb_toggle {
+   margin-bottom: 15px;
+}
+
+/* Added gold borders to tabs */
+.tab-style-one, .wpb_tour.tab-style-one, .wpb_tour.tab-style-one .wpb_tabs_nav, .wpb_tabs.tab-style-one, .shortcode-tabs.tab-style-one, .tab-style-one .wpb_tabs_nav, .tab-style-three .wpb_tabs_nav, .tab-style-one.wpb_tabs .wpb_tabs_nav li:before, .tab-style-three.wpb_tabs .wpb_tabs_nav li:before, .tab-style-two .wpb_tabs_nav, .tab-style-two .wpb_tabs_nav > li, .tab-style-one.tab-horizontal .tab-inner-content, .shortcode-tabs.tab-style-two .nav, .tab-horizontal.tab-style-two .tab, .tab-style-three.tab-horizontal .tab-inner-content, .tab-style-one.tab-horizontal .tab:before, .tab-style-three.tab-horizontal .tab:before, .tab-style-one.vertical-tab .tab:after, .tab-style-one.vertical-tab .nav, .tab-style-two.vertical-tab .tab, .tab-style-three.vertical-tab .tab, .tab-style-three.vertical-tab .nav, .wpb_tour.tab-style-one .wpb_tabs_nav li, .wpb_tour.tab-style-two .wpb_tabs_nav li, .wpb_tour.tab-style-three .wpb_tabs_nav, .wpb_tour.tab-style-three .wpb_tabs_nav li {
+    border-color: #FDB813;
+}
+
+/* Increased width of side tab and borders */
+.tab-style-one.vertical-tab .tab:after {
+    width: 250px;
+}
+.shortcode-tabs.vertical-tab .tab {
+    width: 290px;
+}
+
+
+/* Sidebar customizations */
+
+/* Removed bottom border from menu */
+.sidebar-content .widget .recent-posts li, .sidebar-content .widget .tp_recent_tweets li, .sidebar-content .widget .testimonials.list-view li, .sidebar-content .widget .menu li, .sidebar-content .widget .custom-menu li, .sidebar-content .widget .custom-nav > li, .sidebar-content .widget-custom-nav li li, .sidebar-content .widget_pages li, .sidebar-content .widget_recent_comments li, .sidebar-content .widget_categories li, .sidebar-content .widget_meta li, .sidebar-content .blogroll li, .sidebar-content .widget_archive li, .sidebar-content .widget_recent_entries li, .sidebar-content .widget .st-accordion li, .sidebar-content .widget .contact-info li, .sidebar-content .widget .custom-categories li, .sidebar-content .widget .qts-lang-menu li {
+    border-color: rgba(218, 222, 225, 0.8) -moz-use-text-color -moz-use-text-color;
+    border-style: none;
+    border-width: 0px;
+}
+
+/* Reduced right padding of sidebar to make things fit better */
+   .sidebar .widget, .sidebar-content .widget {
+   padding: 25px 15px 15px;
+}
+
+/* Added some space for the font awesome icon in sidebar menus */
+.menu a, .custom-menu a, .widget_pages a {
+    padding-left: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Colored and reduce size of font awesome arrow in sidebar menus */
+    .fa-chevron-right:before {
+    color: #00549E;
+    font-size: 12px;
+}
+
+/* Hide author meta for all posts */
+.entry-author {
+    display: none;
+    padding: 15px 20px 5px;
+}
+
+/* Hide navigation in posts */
+.navigation-inner {
+    display: none;
+}
+
+/* Change font family for Kwayy Site Map */
+   pre, code, kbd, samp {
+   font-family: 'Open Sans',sans-serif;
+}
+
+/* Enlarged font size of image captions in photo albums */
+
+.mfp-figure small, .mfp-iframe-scaler small {
+    color: #F6F6F6;
+    display: block;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+/* Changed content tables to match gold side tabs and added more padding */
+
+    .content table, .content td, .content th {
+    border-color: #fdb813;
+}
+.content td, .content th {
+    border-top: 1px solid #fdb813;
+    padding: 5px 10px 5px 10px;
+}
+
+/* Hide PDF div on home, blog pages, News & Events, Careers and New Products   */
+.page-id-21 div.printfriendly {
+    display: none;
+}
+.page-id-99 div.printfriendly {
+    display: none;
+}
+
+.page-id-87 div.printfriendly {
+    display: none;
+}
+.page-id-57 div.printfriendly {
+    display: none;
+}
+.page-id-95 div.printfriendly {
+    display: none;
+}
+

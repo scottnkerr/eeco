@@ -1,0 +1,28 @@
+/* CSS Document */
+
+#gform_wrapper_1,
+#gform_wrapper_2,
+#gform_wrapper_3,
+#gform_wrapper_4,
+#gform_wrapper_5,
+#gform_wrapper_6,
+#gform_wrapper_7,
+#gform_wrapper_8,
+#gform_wrapper_9,
+#gform_wrapper_10
+	{ display:none; }
+	
+#gform_wrapper_11
+	{ margin:auto; max-width:620px; }
+	
+.ticr_gf_toggle { cursor:pointer; color:#00549E; font-weight:bold; text-decoration:underline; }
+.ticr_gf_toggle:hover { color:#00549E; text-decoration:none; }
+
+.gform_wrapper .gform_body input[type="text"], .gform_wrapper .gform_body input[type="url"], .gform_wrapper .gform_body input[type="email"], .gform_wrapper .gform_body input[type="tel"], .gform_wrapper .gform_body input[type="number"], .gform_wrapper .gform_body input[type="password"]
+	{ padding: 0.3em !important; border-radius: 5px; line-height: 1.2; }
+	
+.gform_wrapper .top_label .gfield_label { margin: 0.625em 0px 0 !important; }
+
+body .gform_wrapper label.gfield_label + div.ginput_container { margin-top:0 !important; }
+.gform_wrapper .gform_heading { margin-bottom:0 !important; }
+

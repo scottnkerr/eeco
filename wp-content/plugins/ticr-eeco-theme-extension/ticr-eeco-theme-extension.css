@@ -1,0 +1,36 @@
+/* CSS Document */
+
+/* WORDPRESS SEO SITE MAP */
+
+#wpseo_sitemap li { list-style:none; border-bottom:1px solid #CCC; }
+#wpseo_sitemap li a { display:block; text-decoration:none; font-weight:400; color:#00549E; font-style:normal; padding:5px; transition: all 0.25s ease; }
+#wpseo_sitemap li a:hover { background-color:#FDB813; color:white; }
+
+
+/* SHORTCODE TABS */
+.page-id-17880 .tab-style-one.tab-horizontal .tab::before { content:normal !important; }
+.page-id-17880 .shortcode-tabs .tab { 
+	border-right:1px solid #FABB32;
+	border-radius:7px 7px 0 0;
+	padding-left:75px !important;
+	background-repeat:no-repeat; background-size:auto 30px; background-position:5px 5px;
+}
+.page-id-17880 .shortcode-tabs .active-tab.tab-counter-0 { background-color:#BB2322; color:white !important; }
+.page-id-17880 .shortcode-tabs .active-tab.tab-counter-1,
+.page-id-17880 .shortcode-tabs .active-tab.tab-counter-2
+	{ background-color:#0067CD; color:white !important; }
+.Xpage-id-17880 .shortcode-tabs .active-tab.tab-counter-2 { background-color:#008996; color:white !important; }
+
+/* LOCATIONS TABLES */
+.page-id-17880 .tab-counter-0 { 
+	background-image:url('http://eecoonline.com/wp-content/uploads/2015/07/rockwell-automation-tab-logo.png'); 
+}
+.page-id-17880 .tab-counter-1, .page-id-17880 .tab-counter-2 { 
+	background-image:url('http://eecoonline.com/wp-content/uploads/2015/07/eaton-tab-logo.png'); 
+}
+.Xpage-id-17880 .tab-counter-2 { 
+	background-image:url('http://eecoonline.com/wp-content/uploads/2015/07/siemens-tab-logo.png'); 
+}
+
+/* WSI UPDATES */
+.wsi-integration-archive { margin-top:10px; }
