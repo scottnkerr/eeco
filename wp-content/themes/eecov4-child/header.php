@@ -40,6 +40,13 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<style type="text/css" id="static-stylesheet"></style>
+	<?php global $includeBootstrap;
+		if (!empty($includeBootstrap)) : ?>
+		<link href="<?php echo get_stylesheet_directory_uri();?>/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo get_stylesheet_directory_uri();?>/css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+	<link href="<?php echo get_stylesheet_directory_uri();?>/css/fix.css" rel="stylesheet" type="text/css">
+<?php endif; ?>
+<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
 	<?php
 	if ( ! is_preview() ) {
 
@@ -73,9 +80,16 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 <?php endif; // show header ?>
 
-	<?php do_action( 'presscore_before_main_container' ); ?>
+	<?php do_action( 'presscore_before_main_container' ); 
+	
+global $containerclassoverride;	
+if (!empty($containerclassoverride)) {
+	 $classes[] = 'sidebar-none inspire-blog';
+	 }
 
-	<div id="main" <?php presscore_main_container_classes(); ?>><!-- class="sidebar-none", class="sidebar-left", class="sidebar-right" -->
+
+?>
+	<div id="main" <?php presscore_main_container_classes($classes); ?>><!-- class="sidebar-none", class="sidebar-left", class="sidebar-right" -->
 
 <?php if ( presscore_is_content_visible() ): ?>
 

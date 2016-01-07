@@ -1,0 +1,221 @@
+* {-webkit-font-smoothing: antialiased;}
+
+.page-title.title-left {
+  box-sizing: initial;
+  -webkit-box-sizing: initial;
+}
+.navigation-holder * {
+  box-sizing: initial;
+  -webkit-box-sizing: initial;
+}
+.container span {
+  position: initial !important;
+  width: auto !important;
+  height: auto !important;
+  border: none !important;
+  z-index: initial !important;
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+
+.inspire-blog .wf-wrap {
+  max-width: initial;
+ padding: 0;
+  margin: 0; 
+}
+.inspire-blog div.container {
+	position:initial;
+	font-family: 'Lato', sans-serif;
+}
+.catsticky {
+	color: #fff;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: 100px;
+	margin-top: -68px;
+}
+.catsticky a {
+	color:#fff;
+	text-decoration: none;
+}
+.catsticky a:hover {
+	color:#efefef;
+}
+h2.inspire-cat {
+font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  padding: 19px 8px;
+  margin:0;
+}
+.cat-automation h2.inspire-cat {
+	background-color:#7dc242;
+}
+.cat-connections h2.inspire-cat {
+	background-color:#e11f26;
+}
+.cat-electrical-enclosures h2.inspire-cat {
+	background-color:#ecc629;
+}
+.inspire-subscribe {
+  background-color: #ebebeb;
+  text-align: center;
+  padding: 23px;
+  font-size: 18px;
+  color: #616161;
+}
+.inspire-subscribe a {
+	color: #616161;
+	font-weight: normal;
+}
+.inspire-subscribe a:hover {
+	color: #000000;
+}
+.subscribe-carat {
+	color:#88b32d;
+}
+.cat-connections .subscribe-carat {
+	color:#e11f26;
+}
+.cat-electrical-enclosures .subscribe-carat {
+	color:#ecc629;
+}
+.inspire-blog-date {
+	text-align: right;
+	font-size: 16px;
+	float:right;
+	background-color:rgba(0,0,0,.5);
+	padding:8px 13px;
+	margin-bottom: 15px;
+}
+.inspire-blog-title {
+font-size: 28px;
+  font-weight: bold;
+  line-height: 32px;
+  clear: both;
+  padding: 10px 30px;
+  height: 118px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.cat-automation .inspire-blog-title {
+	background-color: rgba(64,99,34,.6);
+}
+.cat-connections .inspire-blog-title {
+	background-color: rgba(102,14,17,.6);
+}
+.cat-electrical-enclosures .inspire-blog-title {
+	background-color: rgba(215,181,39,.6);
+}
+.inspire-blog-social img {
+	display:inline-block;
+	max-height: 30px;
+}
+.inspire-blog-social {
+	padding:20px;
+background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+.inspire-blog-read-more {
+	text-align: right;
+	padding:5px 10px;
+}
+.cat-automation .inspire-blog-read-more {
+	background-color: #7dc242;
+}
+.cat-connections .inspire-blog-read-more {
+	background-color:#e11f26;
+}
+.cat-electrical-enclosures .inspire-blog-read-more {
+	background-color:#ecc629;
+}
+.inspire-banner {
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 27px;
+	line-height: 28px;
+	font-weight: 100;
+	color:#fff;
+	padding:35px;
+}
+.inspire-banner h1 {
+  font-size: 131px;
+  font-weight: 400;
+  color: #fff;
+  /* line-height: 120px; */
+  margin: 22px 0 52px;
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-inspire {
+	color:#00539c !important;
+	background-color: #fff !important;
+	padding:13px 80px !important;
+	font-size:16px !important;
+	border-radius: 0px !important;
+}
+.inspire-featured-container {
+	background-size:cover;
+	
+}
+.inspire-featured {
+	
+}
+.featured-left {
+	
+}
+.featured-center {
+	
+}
+.yellowbrick {
+	background-image: url('/wp-content/themes/eecov4-child/img/yellowbrick.jpg');
+	background-repeat: repeat-x;
+	height:15px;
+}
+@media(max-width:1200px) {
+	h2.inspire-cat {
+		font-size:24px;
+	}
+.inspire-blog .wf-container-main {
+  padding-right: initial !important;
+}	
+.inspire-blog-title {
+  font-size: 20px;
+  line-height: 26px;
+  }
+ .inspire-blog .container {
+	 width:90%;
+ } 
+}
+@media(max-width:1000px) {
+	h2.inspire-cat {
+		font-size:20px;
+	}
+}
+@media(max-width:800px) {
+	h2.inspire-cat {
+		font-size:18px;
+	}
+}
+@media(max-width:768px) {
+	.inspire-banner {
+		font-size:13px;
+	}
+.inspire-banner h1 {
+	font-size:60px
+}
+.btn-inspire {
+	padding-left: 43px !important;
+	padding-right: 43px !important;
+}
+.catsticky {
+	margin-top:30px;
+}
+}
